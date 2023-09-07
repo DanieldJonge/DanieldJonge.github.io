@@ -9,8 +9,9 @@ nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 200px;
     background-color: #c7c7c7af;
+    z-index: 1;
 }
-.menu-items {
+.nav-items {
     font-family: Arial, sans-serif;
     font-size: 18px;
     background-color: #4681f4;
@@ -25,10 +26,10 @@ nav {
     padding-bottom: 5px;
     border-radius: 7px;
 }
-.menu-items:hover {
+.nav-items:hover {
     background-color: #486db6;
 }
-body {
+#profilebody {
     
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
@@ -52,7 +53,20 @@ article {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+sidemenu {
+    position: fixed;
+    margin-top: 10rem;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #c7c7c7af;
+}
+.side-items {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
 h1 {
     font-size: 28px;
     color: #333;
