@@ -7,7 +7,7 @@ nav {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 375px;
     background-color: #c7c7c7af;
     z-index: 1;
 }
@@ -110,7 +110,7 @@ details > summary {
     margin: 0 auto 10px auto; 
     cursor: pointer;
     position: relative;
-    display: flex;
+
     justify-content: center;
     align-items: center;
 }
