@@ -7,7 +7,7 @@ nav {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 300px;
     background-color: #c7c7c7af;
     z-index: 1;
 }
@@ -48,7 +48,7 @@ main {
     
 
 }
-article {
+section {
     margin-top: 3rem;
     background-color: #fff;
     padding: 20px;
@@ -100,3 +100,23 @@ img {
 .introtekst {
     text-align: center;
 }
+details > summary {
+    padding: 4px;
+    max-width: 300px;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    border-radius: 5px;
+    margin: 0 auto 10px auto; 
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  /* details > p {
+    background-color: #eeeeee;
+    padding: 4px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+  } */
