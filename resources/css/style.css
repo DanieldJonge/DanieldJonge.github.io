@@ -29,7 +29,7 @@ nav {
 .nav-items:hover {
     background-color: #486db6;
 }
-#profilebody {
+body {
     
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
@@ -38,12 +38,14 @@ nav {
     justify-content: center;
     /* align-items: center; */
     height: 100vh;
+    
 }
 
 main {
     align-items: center;
     justify-content: center;
     display: flex;
+    
 
 }
 article {
@@ -52,15 +54,21 @@ article {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    
 }
-sidemenu {
+aside {
     position: fixed;
     margin-top: 10rem;
-    padding: 20px;
+    padding-right: 15px;
     border-radius: 20px;
     width: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #c7c7c7af;
+}
+#sidemenu {
+    list-style-type: none;
+    margin-left: -2rem;
 }
 .side-items {
     position: relative;
@@ -71,6 +79,7 @@ h1 {
     font-size: 28px;
     color: #333;
     margin-bottom: 10px;
+    
 }
 
 h2 {
@@ -87,4 +96,7 @@ img {
     border-radius: 10px;
     width: auto;
     height: 300px
+}
+.introtekst {
+    text-align: center;
 }
