@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <style>
+        .progress-fill {
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <a class="nav-items" href="/index.html">Home</a>
+        <a class="nav-items" href="/profile.html">Profile</a>
+        <a class="nav-items" href="/blog.html">Blog</a>
+        <a class="nav-items" href="/faq.html">FAQ</a>
+        <a class="nav-items" style="background-color: #55c2da;" href="/dashboard.html">Dashboard</a>
+    </nav>
+</header>
+<aside>
+    <ul id="sidemenu">
+        <li class="side-items"><a href="/">Link1</a></li>
+        <li class="side-items"><a href="/">Link2</a></li>
+        <li class="side-items"><a href="/">Link3</a></li>
+    </ul>
+</aside>
+<body id="dashboardbody">
+    <main>
+        <section>
+            <h1 class="introtekst">Study monitor</h1>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Quartile</th>
+                            <th>Test Item</th>
+                            <th>Grade</th>
+                            <th>Credits</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="completeness">
+                <p>Completeness of First Year:</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0;"></div>
+                </div>
+                <p>NBSA Boundary: 60 EC</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function updateProgressBar(completeness) {
+            const progressBar = document.querySelector('.progress-fill');
+            progressBar.style.width = completeness + '%';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const totalRequiredCredits = 60;
+            let obtainedCredits = 30;
+
+            let completenessPercentage = (obtainedCredits / totalRequiredCredits) * 100;
+            completenessPercentage = Math.min(completenessPercentage, 100);
+
+            setTimeout(() => {
+                updateProgressBar(completenessPercentage);
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>
