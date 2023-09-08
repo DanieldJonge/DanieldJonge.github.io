@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="resources/css/style.css">
 </head>
 <header>
@@ -30,107 +30,128 @@
             <h1 class="introtekst">Blog</h1>
             <details>
                 <summary>Article in section of vice versa</summary>
-                <p style="color: #333">Het plaatsen van "article"-elementen binnen "section"-elementen of omgekeerd
-                    hangt af van de
-                    semantische betekenis en de hiërarchie van de inhoud op je webpagina. Beide aanpakken kunnen correct
-                    zijn, maar ze dienen verschillende doelen en hebben specifieke toepassingen. Hier is een
-                    gedetailleerde redenering waarom je voor elk van deze benaderingen zou kunnen kiezen, en in welke
-                    situaties:</p>
+                <section id="tyestwe">
+                    <p style="color: #333">Het plaatsen van "article"-elementen binnen "section"-elementen of omgekeerd
+                        hangt af van de
+                        semantische betekenis en de hiërarchie van de inhoud op je webpagina. Beide aanpakken kunnen
+                        correct
+                        zijn, maar ze dienen verschillende doelen en hebben specifieke toepassingen. Hier is een
+                        gedetailleerde redenering waarom je voor elk van deze benaderingen zou kunnen kiezen, en in
+                        welke
+                        situaties:</p>
 
-                <h2>1. "section" binnen "article":</h2>
+                    <h2>1. "section" binnen "article":</h2>
 
-                <p style="color: #333">Dit benadering wordt vaak gebruikt wanneer de "article"-tag de belangrijkste
-                    content van een pagina
-                    vertegenwoordigt, en deze content is onderverdeeld in verschillende secties. Hier zijn enkele
-                    redenen waarom je "section" binnen "article" zou willen nesten:</p>
+                    <p style="color: #333">Dit benadering wordt vaak gebruikt wanneer de "article"-tag de belangrijkste
+                        content van een pagina
+                        vertegenwoordigt, en deze content is onderverdeeld in verschillende secties. Hier zijn enkele
+                        redenen waarom je "section" binnen "article" zou willen nesten:</p>
 
-                <ul>
-                    <li>Semantische betekenis: "article" wordt vaak gebruikt om zelfstandige, herbruikbare content te
-                        markeren, zoals nieuwsartikelen, blogposts of recensies. Door "section" binnen "article" te
-                        plaatsen, geef je aan dat de "section"s specifieke delen van het artikel zijn, zoals inleiding,
-                        hoofdtekst, conclusie, enz.</li>
-                    <li>Voordeel van secties: Door "section" te gebruiken binnen "article", kun je de content verder
-                        onderverdelen in logische secties die elk hun eigen koppen en inhoud hebben. Dit kan de
-                        leesbaarheid van de HTML en de toegankelijkheid van de pagina verbeteren.</li>
-                    <li>Flexibiliteit: Deze aanpak maakt het gemakkelijker om de opmaak van secties binnen artikelen aan
-                        te passen met behulp van CSS, en het stelt je in staat om specifieke secties te targeten voor
-                        interactie met JavaScript.</li>
-                </ul>
+                    <ul>
+                        <li>Semantische betekenis: "article" wordt vaak gebruikt om zelfstandige, herbruikbare content
+                            te
+                            markeren, zoals nieuwsartikelen, blogposts of recensies. Door "section" binnen "article" te
+                            plaatsen, geef je aan dat de "section"s specifieke delen van het artikel zijn, zoals
+                            inleiding,
+                            hoofdtekst, conclusie, enz.</li>
+                        <li>Voordeel van secties: Door "section" te gebruiken binnen "article", kun je de content verder
+                            onderverdelen in logische secties die elk hun eigen koppen en inhoud hebben. Dit kan de
+                            leesbaarheid van de HTML en de toegankelijkheid van de pagina verbeteren.</li>
+                        <li>Flexibiliteit: Deze aanpak maakt het gemakkelijker om de opmaak van secties binnen artikelen
+                            aan
+                            te passen met behulp van CSS, en het stelt je in staat om specifieke secties te targeten
+                            voor
+                            interactie met JavaScript.</li>
+                    </ul>
 
-                <h2>2. "article" binnen "section":</h2>
+                    <h2>2. "article" binnen "section":</h2>
 
-                <p style="color: #333">Deze aanpak is geschikt voor situaties waarin de nadruk ligt op de "section" als
-                    de belangrijkste
-                    inhoud van de pagina, en deze sectie kan op zichzelf staan zonder de "article"-context. Hier zijn
-                    enkele redenen waarom je "article" binnen "section" zou willen nesten:</p>
+                    <p style="color: #333">Deze aanpak is geschikt voor situaties waarin de nadruk ligt op de "section"
+                        als
+                        de belangrijkste
+                        inhoud van de pagina, en deze sectie kan op zichzelf staan zonder de "article"-context. Hier
+                        zijn
+                        enkele redenen waarom je "article" binnen "section" zou willen nesten:</p>
 
-                <ul>
-                    <li>Semantische betekenis: "section" wordt vaak gebruikt om grotere delen van een pagina te
-                        markeren, zoals hoofdstukken, zijbalken, of grote inhoudsblokken. Het plaatsen van "article"
-                        binnen "section" geeft aan dat dit gedeelte de kern van de pagina is, terwijl "article" slechts
-                        een deel ervan is.</li>
-                    <li>Zelfstandigheid van secties: Als je "section" zelfstandige inhoud vertegenwoordigt, zoals een
-                        hoofdstuk in een boek of een aparte sectie van een handleiding, is het logisch om "article"
-                        binnen "section" te plaatsen, omdat de sectie op zichzelf zinvol is zonder de "article".</li>
-                    <li>Leesbaarheid en onderhoud: Het gebruik van "article" binnen "section" kan de HTML hiërarchie
-                        vereenvoudigen, waardoor de structuur van de pagina gemakkelijker te begrijpen is en het
-                        onderhoud eenvoudiger wordt, vooral als je meerdere "section"-elementen op de pagina hebt.</li>
-                </ul>
+                    <ul>
+                        <li>Semantische betekenis: "section" wordt vaak gebruikt om grotere delen van een pagina te
+                            markeren, zoals hoofdstukken, zijbalken, of grote inhoudsblokken. Het plaatsen van "article"
+                            binnen "section" geeft aan dat dit gedeelte de kern van de pagina is, terwijl "article"
+                            slechts
+                            een deel ervan is.</li>
+                        <li>Zelfstandigheid van secties: Als je "section" zelfstandige inhoud vertegenwoordigt, zoals
+                            een
+                            hoofdstuk in een boek of een aparte sectie van een handleiding, is het logisch om "article"
+                            binnen "section" te plaatsen, omdat de sectie op zichzelf zinvol is zonder de "article".
+                        </li>
+                        <li>Leesbaarheid en onderhoud: Het gebruik van "article" binnen "section" kan de HTML hiërarchie
+                            vereenvoudigen, waardoor de structuur van de pagina gemakkelijker te begrijpen is en het
+                            onderhoud eenvoudiger wordt, vooral als je meerdere "section"-elementen op de pagina hebt.
+                        </li>
+                    </ul>
 
-                <p style="color: black;">In conclusie, het kiezen tussen het nesten van "article" binnen "section" of
-                    "section" binnen
-                    "article" hangt af van de specifieke structuur en semantiek van je webpagina. Het belangrijkste is
-                    om semantische HTML te gebruiken die de inhoud van je pagina nauwkeurig weergeeft, zodat zowel
-                    browsers als hulpmiddelen voor toegankelijkheid de pagina correct kunnen interpreteren. Overweeg
-                    altijd de betekenis en de relatie tussen elementen bij het maken van je keuze, en zorg ervoor dat je
-                    code gemakkelijk te begrijpen en te onderhouden is.</p>
-
+                    <p style="color: black;">In conclusie, het kiezen tussen het nesten van "article" binnen "section"
+                        of
+                        "section" binnen
+                        "article" hangt af van de specifieke structuur en semantiek van je webpagina. Het belangrijkste
+                        is
+                        om semantische HTML te gebruiken die de inhoud van je pagina nauwkeurig weergeeft, zodat zowel
+                        browsers als hulpmiddelen voor toegankelijkheid de pagina correct kunnen interpreteren. Overweeg
+                        altijd de betekenis en de relatie tussen elementen bij het maken van je keuze, en zorg ervoor
+                        dat je
+                        code gemakkelijk te begrijpen en te onderhouden is.</p>
+                </section>
             </details>
             <details>
                 <summary>Wie ben ik?</summary>
-                <h1>Persoonlijke gegevens</h1>
-                <ul>
-                    <li>Mijn naam is Daniël de Jonge.</li>
-                    <li>Ik ben 17 jaar oud.</li>
-                    <li>Mijn woonplaats is Terneuzen en blijf daar ook wonen.</li>
-                    <li>Mijn vooropleiding is HAVO NG.</li>
-                </ul>
+                <section>
+                    <h1>Persoonlijke gegevens</h1>
+                    <ul>
+                        <li>Mijn naam is Daniël de Jonge.</li>
+                        <li>Ik ben 17 jaar oud.</li>
+                        <li>Mijn woonplaats is Terneuzen en blijf daar ook wonen.</li>
+                        <li>Mijn vooropleiding is HAVO NG.</li>
+                    </ul>
 
-                <h2>Motivatie van studiekeuze:</h2>
-                <ul>
-                    <li>Ik heb altijd veel interesse gehad in de wereld van ICT en ben altijd al bezig geweest met
-                        coderen, enzovoort. Het was heel vaak goed kopiëren, maar ik wil het nu ook wel eens voor een
-                        groot deel zelf kunnen.</li>
-                </ul>
-                <h2>Na het voltooien van de opleiding:</h2>
-                <ul>
-                    <li>Ik heb geen idee, ik hoop toch om iets zelf te starten of ergens te werken met veel vrije keuze.
-                        Ik
-                        hoop, zoals hierboven al vermeld, veel meer zelf te kunnen en zeker te weten welke richting ik
-                        op
-                        wil.</li>
-                </ul>
-                <h2>Sterke kanten:</h2>
-                <ul>
-                    <li>Ik ben redelijk zelfstandig en zoek altijd naar een oplossing.</li>
-                    <li>Ik kan best goed samenwerken.</li>
-                </ul>
+                    <h2>Motivatie van studiekeuze:</h2>
+                    <ul>
+                        <li>Ik heb altijd veel interesse gehad in de wereld van ICT en ben altijd al bezig geweest met
+                            coderen, enzovoort. Het was heel vaak goed kopiëren, maar ik wil het nu ook wel eens voor
+                            een
+                            groot deel zelf kunnen.</li>
+                    </ul>
+                    <h2>Na het voltooien van de opleiding:</h2>
+                    <ul>
+                        <li>Ik heb geen idee, ik hoop toch om iets zelf te starten of ergens te werken met veel vrije
+                            keuze.
+                            Ik
+                            hoop, zoals hierboven al vermeld, veel meer zelf te kunnen en zeker te weten welke richting
+                            ik
+                            op
+                            wil.</li>
+                    </ul>
+                    <h2>Sterke kanten:</h2>
+                    <ul>
+                        <li>Ik ben redelijk zelfstandig en zoek altijd naar een oplossing.</li>
+                        <li>Ik kan best goed samenwerken.</li>
+                    </ul>
 
-                <h2>Zwakke kanten:</h2>
-                <ul>
-                    <li>Niet altijd volgens de standaardweg dingen doen, en daardoor ook vaker fouten maken.</li>
-                </ul>
-                <h2>Kansen:</h2>
-                <ul>
-                    <li>
-                        Een goede baan voor later.
-                    </li>
-                </ul>
+                    <h2>Zwakke kanten:</h2>
+                    <ul>
+                        <li>Niet altijd volgens de standaardweg dingen doen, en daardoor ook vaker fouten maken.</li>
+                    </ul>
+                    <h2>Kansen:</h2>
+                    <ul>
+                        <li>
+                            Een goede baan voor later.
+                        </li>
+                    </ul>
 
-                <h2>Risico's:</h2>
-                <ul>
-                    <li>--</li>
-                </ul>
+                    <h2>Risico's:</h2>
+                    <ul>
+                        <li>--</li>
+                    </ul>
+                </section>
             </details>
             <details>
                 <summary>Dit is begin article 3</summary>

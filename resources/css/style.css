@@ -1,5 +1,5 @@
 nav {
-    position:fixed;
+    position: fixed;
     right: 5px;
     margin: 0;
     /* margin-top: 0.1rem; */
@@ -11,6 +11,7 @@ nav {
     background-color: #c7c7c7af;
     z-index: 1;
 }
+
 .nav-items {
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -26,11 +27,13 @@ nav {
     padding-bottom: 5px;
     border-radius: 7px;
 }
+
 .nav-items:hover {
     background-color: #486db6;
 }
+
 body {
-    
+
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     padding: 0;
@@ -38,16 +41,17 @@ body {
     justify-content: center;
     /* align-items: center; */
     height: 100vh;
-    
+
 }
 
 main {
     align-items: center;
     justify-content: center;
     display: flex;
-    
+
 
 }
+
 section {
     margin-top: 3rem;
     background-color: #fff;
@@ -55,8 +59,9 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 1200px;
-    
+
 }
+
 aside {
     position: fixed;
     margin-top: 10rem;
@@ -66,20 +71,23 @@ aside {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #c7c7c7af;
 }
+
 #sidemenu {
     list-style-type: none;
     margin-left: -2rem;
 }
+
 .side-items {
     position: relative;
     font-family: Arial, sans-serif;
     font-size: 18px;
 }
+
 h1 {
     font-size: 28px;
     color: #333;
     margin-bottom: 10px;
-    
+
 }
 
 h2 {
@@ -97,26 +105,43 @@ img {
     width: auto;
     height: 300px
 }
+
 .introtekst {
     text-align: center;
 }
-details > summary {
+
+details>summary {
     padding: 4px;
     max-width: 300px;
     background-color: #eeeeee;
     border: none;
     box-shadow: 1px 1px 2px #bbbbbb;
     border-radius: 5px;
-    margin: 0 auto 10px auto; 
+    margin: 0 auto 10px auto;
     cursor: pointer;
     position: relative;
 
     justify-content: center;
     align-items: center;
 }
-  /* details > p {
+
+/* details > p {
     background-color: #eeeeee;
     padding: 4px;
     margin: 0;
     box-shadow: 1px 1px 2px #bbbbbb;
   } */
+#fotoikbegin {
+    position: absolute;
+    width: 175px;
+    height: auto;
+    top: 60px;
+    right: 248px;
+}
+
+#fotohz {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 75px;
+}
