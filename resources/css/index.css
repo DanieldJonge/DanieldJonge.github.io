@@ -1,0 +1,21 @@
+#sectionindex1 {
+    position: relative;
+}
+
+#fotoikbegin {
+    position: absolute;
+    width: 175px;
+    height: auto;
+    top: 5px;
+    right: 5px;
+}
+
+#fotohz {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 5px;
+}
+.introtekst {
+    text-align: center;
+}

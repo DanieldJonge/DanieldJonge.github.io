@@ -28,6 +28,7 @@
         <li class="side-items"><a href="/">Link3</a></li>
     </ul>
 </aside>
+
 <body id="dashboardbody">
     <main>
         <section>
@@ -36,25 +37,127 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Course</th>
                             <th>Quartile</th>
-                            <th>Test Item</th>
-                            <th>Grade</th>
+                            <th>Course</th>
                             <th>Credits</th>
-                            <th>Status</th>
+                            <th>Exam</th>
+                            <th>Grade</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td rowspan="3">1</td>
+                            <td title="PCO - CU75002V2">Program and Career Orientation</td>
+                            <td>2,5</td>
+                            <td title="Assessment was gemaakt op basis van deze website"><u>Assessment</u></td>
+                            <td title="Weging 100">-</td>
+                        </tr>
+                        <tr>
+                            <td title="CBA - CU75001V3">Computer Science Basics</td>
+                            <td>5</td>
+                            <td>Theorietentamen</td>
+                            <td title="Weging 100">-</td>
+                        </tr>
+                        <tr>
+                            <td title="PBA - CU75003V1">Programming Basics</td>
+                            <td>5</td>
+                            <td>Casustoets</td>
+                            <td title="Weging 100">-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">2</td>
+                            <td title="OOP - CU75004V1" rowspan="2">Object Oriented Programming</td>
+                            <td rowspan="2">10</td>
+                            <td>Casustoets</td>
+                            <td title="Weging 50">-</td>
+                        </tr>
+                        <tr>
+                            <td><a title="Ingeleverde product" target="_blank">Groepsopdracht</a></td>
+                            <td title="Weging 50">-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">3</td>
+                            <td title="FDE1 - CU75008V1">Framework Development 1</td>
+                            <td>5</td>
+                            <td>Casustoets</td>
+                            <td title="Weging 100">-</td>
+                        </tr>
+                        <tr>
+                            <td title="FPR1 - CU75009V3" rowspan="3">Framework Project 1</td>
+                            <td rowspan="3">7,5</td>
+                            <td>Beoordeling op de werkplek</td>
+                            <td title="Weging 34">-</td>
+                        </tr>
+                        <tr>
+                            <td><a title="Ingeleverde product" target="_blank">Projectresultaat</a></td>
+                            <td title="Weging 33">-</td>
+                        </tr>
+                        <tr>
+                            <td>Beeld van de benodigdheden</td>
+                            <td title="Weging 33">-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">4</td>
+                            <td title="FPR2" rowspan="3">Framework Project 2</td>
+                            <td rowspan="3">10</td>
+                            <td>Assessment</td>
+                            <td title="Weging 25">-</td>
+                        </tr>
+                        <tr>
+                            <td><a title="Ingeleverde product" target="_blank">Groepsassessment</a></td>
+                            <td title="Weging 25">-</td>
+                        </tr>
+                        <tr>
+                            <td>IT-ontwikkelingsportfolio</td>
+                            <td title="Weging 50">-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">-</td>
+                            <td title="PPD-E - CU75068V1">Personal Professional Development Exploration</td>
+                            <td>12,5</td>
+                            <td>Portfolio assesment</td>
+                            <td title="Weging 100">-</td>
+                        </tr>
+                        <tr>
+                            <td title="PPW1 - CU75054V1" rowspan="2">IT Personality</td>
+                            <td>1,25</td>
+                            <td>Portfolio</td>
+                            <td><a title="Ingeleverde product" target="_blank">-</a></td>
+                        </tr>
+                        <tr>
+                            <td>1,25</td>
+                            <td>Portfolio</td>
+                            <td>-</td>
+                        </tr>
+                        <table class="small-table">
+                            <tr>
+                                <th>Cursus</th>
+                                <th>Examen</th>
+                                <th>Resultaat</th>
+                                <th>Herkansing</th>
+                            </tr>
+                            <tr>
+                                <td title="CU75005V3" rowspan="2">Professional Skills 1</td>
+                                <td>Nederlands</td>
+                                <td title="Weging 0">-</td>
+                                <td title="Weging 0">-</td>
+                            </tr>
+                            <tr>
+                                <td>Engels</td>
+                                <td title="Weging 0">-</td>
+                                <td title="Weging 0">-</td>
+                            </tr>
+                        </table>
+
                     </tbody>
                 </table>
-            </div>
-            <div class="completeness">
-                <p>Completeness of First Year:</p>
-                <div class="progress-bar">
-                    <div class="progress-fill" style="width: 0;"></div>
+                <div class="completeness">
+                    <p>Completeness of First Year:</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0;"></div>
+                    </div>
+                    <p>NBSA Boundary: 60 EC</p>
                 </div>
-                <p>NBSA Boundary: 60 EC</p>
-            </div>
         </section>
     </main>
     <script>
@@ -65,7 +168,7 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             const totalRequiredCredits = 60;
-            let obtainedCredits = 30;
+            let obtainedCredits = 10;
 
             let completenessPercentage = (obtainedCredits / totalRequiredCredits) * 100;
             completenessPercentage = Math.min(completenessPercentage, 100);

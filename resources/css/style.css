@@ -53,6 +53,7 @@ main {
 }
 
 section {
+    position: relative;
     margin-top: 3rem;
     background-color: #fff;
     padding: 20px;
@@ -70,6 +71,7 @@ aside {
     width: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #c7c7c7af;
+    z-index: 1;
 }
 
 #sidemenu {
@@ -106,9 +108,7 @@ img {
     height: 300px
 }
 
-.introtekst {
-    text-align: center;
-}
+
 
 details>summary {
     padding: 4px;
@@ -131,20 +131,7 @@ details>summary {
     margin: 0;
     box-shadow: 1px 1px 2px #bbbbbb;
   } */
-#fotoikbegin {
-    position: absolute;
-    width: 175px;
-    height: auto;
-    top: 60px;
-    right: 248px;
-}
 
-#fotohz {
-    position: absolute;
-    width: 300px;
-    height: auto;
-    top: 75px;
-}
 .study-monitor {
     max-width: 800px;
     margin: 20px auto;
