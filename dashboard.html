@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dit is de studiemonitor, hierop kan je zien wat mijn vooruitgang is!">
     <title>Dashboard</title>
     <link rel="stylesheet" href="resources/css/style.css">
     <style>
@@ -18,20 +19,26 @@
         <a class="nav-items" href="/profile.html">Profile</a>
         <a class="nav-items" href="/blog.html">Blog</a>
         <a class="nav-items" href="/faq.html">FAQ</a>
-        <a class="nav-items" style="background-color: #55c2da;" href="/dashboard.html">Dashboard</a>
+        <a class="nav-items active" href="/dashboard.html">Dashboard</a>
     </nav>
 </header>
-<aside>
-    <ul id="sidemenu">
-        <li class="side-items"><a href="/">Link1</a></li>
-        <li class="side-items"><a href="/">Link2</a></li>
-        <li class="side-items"><a href="/">Link3</a></li>
-    </ul>
-</aside>
 
-<body id="dashboardbody">
-    <main>
-        <section>
+<body>
+    <aside id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a
+            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf" target="_blank">Course
+            and Examination Regulations</a>
+        <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank">Implementation Regulations</a>
+        <a href="https://learn.hz.nl/course/view.php?id=23602#section-0" target="_blank">Learn environment</a>
+        <a href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank">Teams environment</a>
+        <a href="https://hz.osiris-student.nl/#/home" target="_blank">Study progress</a>
+        <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github environment</a>
+    </aside>
+    <span onclick="openNav()" id="sidemenuknop">&#9776;</span>
+
+    <main id="main">
+        <section id="sectionindex1">
             <h1 class="introtekst">Study monitor</h1>
             <div class="table-container">
                 <table>
@@ -131,10 +138,10 @@
                         </tr>
                         <table class="small-table">
                             <tr>
-                                <th>Cursus</th>
-                                <th>Examen</th>
-                                <th>Resultaat</th>
-                                <th>Herkansing</th>
+                                <th>Course</th>
+                                <th>Exam</th>
+                                <th>Grade</th>
+                                <th>Resit</th>
                             </tr>
                             <tr>
                                 <td title="CU75005V3" rowspan="2">Professional Skills 1</td>
@@ -156,8 +163,9 @@
                     <div class="progress-bar">
                         <div class="progress-fill" style="width: 0;"></div>
                     </div>
-                    <p>NBSA Boundary: 60 EC</p>
+                    <p>NBSA Boundary: 45 EC</p>
                 </div>
+            </div>
         </section>
     </main>
     <script>
@@ -168,7 +176,7 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             const totalRequiredCredits = 60;
-            let obtainedCredits = 10;
+            let obtainedCredits = 20;
 
             let completenessPercentage = (obtainedCredits / totalRequiredCredits) * 100;
             completenessPercentage = Math.min(completenessPercentage, 100);
@@ -179,5 +187,7 @@
         });
     </script>
 </body>
+<script src="/resources/js/sidemenu.js"></script>
+
 
 </html>

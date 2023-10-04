@@ -1,0 +1,41 @@
+details>summary {
+    padding: 13px;
+    max-width: 350px;
+    background: linear-gradient(315deg, #2EAAfa, #1F2f98);
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    border-radius: 5px;
+    margin: 0 auto 5px auto;
+    cursor: pointer;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.5s;
+}
+details>summary:hover {
+    transition: background-color 0.2s ease;
+    background-color: #c8c8c8;
+}
+.summarydetail {
+    justify-content: center;
+    width: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #DBF3FA;
+
+}
+details {
+    transition: max-height 0.3s ease-in-out; /* Adjust the transition duration and timing function as needed */
+}
+
+details[open] {
+    max-height: 50000px;
+}
+.introtekst {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.5s;
+}

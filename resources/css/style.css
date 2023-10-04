@@ -29,6 +29,7 @@ nav {
 }
 
 .nav-items:hover {
+    transition: background-color 0.2s ease;
     background-color: #486db6;
 }
 
@@ -41,6 +42,7 @@ body {
     justify-content: center;
     /* align-items: center; */
     height: 100vh;
+    transition: 0.5s;
 
 }
 
@@ -59,11 +61,13 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
+    width: 1200px;
+    transition: 0.5s;
+
 
 }
 
-aside {
+/* aside {
     position: fixed;
     margin-top: 10rem;
     padding-right: 15px;
@@ -72,9 +76,9 @@ aside {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #c7c7c7af;
     z-index: 1;
-}
+} */
 
-#sidemenu {
+/* #sidemenu {
     list-style-type: none;
     margin-left: -2rem;
 }
@@ -83,7 +87,7 @@ aside {
     position: relative;
     font-family: Arial, sans-serif;
     font-size: 18px;
-}
+} */
 
 h1 {
     font-size: 28px;
@@ -109,21 +113,6 @@ img {
 }
 
 
-
-details>summary {
-    padding: 4px;
-    max-width: 300px;
-    background-color: #eeeeee;
-    border: none;
-    box-shadow: 1px 1px 2px #bbbbbb;
-    border-radius: 5px;
-    margin: 0 auto 10px auto;
-    cursor: pointer;
-    position: relative;
-
-    justify-content: center;
-    align-items: center;
-}
 
 /* details > p {
     background-color: #eeeeee;
@@ -187,4 +176,60 @@ th {
     height: 100%;
     border-radius: 10px;
     transition: width 1s ease-in-out;
+}
+.active {
+    background-color: #55c2da;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 44, 44, 0.776);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #cecece;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+main {
+    transition: margin-left .5s;
+    /* padding: -16px; */
+    margin-top: -3rem;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+#sidemenuknop {
+    font-size: 50px;
+    cursor: pointer;
 }

@@ -1,0 +1,45 @@
+details>summary {
+    padding: 13px;
+    max-width: 350px;
+    background: linear-gradient(315deg, #2EAAfa, #1F2f98);
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    border-radius: 5px;
+    margin: 0 auto 5px auto;
+    cursor: pointer;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 20px;
+}
+details>summary:hover {
+    transition: background-color 0.2s ease;
+    background-color: #c8c8c8;
+}
+.faqdetail {
+    justify-content: center;
+    width: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* background: linear-gradient(315deg, #1AA7EC, #1E2F97); */
+    background-color: #DBF3FA;
+    /* background: linear-gradient(315deg, #7ccbff, #485291); */
+}
+.faqdetail p {
+color: black;
+}
+details {
+    transition: max-height 0.3s ease-in-out; /* Adjust the transition duration and timing function as needed */
+}
+
+details[open] {
+    max-height: 50000px;
+}
+.introtekst {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.5s;
+}

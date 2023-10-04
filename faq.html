@@ -4,35 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FAQ, voor al je Frequently Asked Questions!">
     <title>FAQ</title>
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/faq.css">
 </head>
 <header>
     <nav>
         <a class="nav-items" href="/index.html">Home</a>
         <a class="nav-items" href="/profile.html">Profile</a>
         <a class="nav-items" href="/blog.html">Blog</a>
-        <a class="nav-items" style="background-color: #55c2da;" href="/faq.html">FAQ</a>
+        <a class="nav-items active" href="/faq.html">FAQ</a>
         <a class="nav-items" href="/dashboard.html">Dashboard</a>
 
 
     </nav>
 </header>
-<aside>
-    <ul id="sidemenu">
-        <li class="side-items"><a href="/">Link1</a></li>
-        <li class="side-items"><a href="/">Link2</a></li>
-        <li class="side-items"><a href="/">Link3</a></li>
-    </ul>
-</aside>
 
-<body id="indexbody">
-    <main>
-        <section>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf"
+            target="_blank">Course
+            and Examination Regulations</a>
+        <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf"
+            target="_blank">Implementation Regulations</a>
+        <a href="https://learn.hz.nl/course/view.php?id=23602#section-0" target="_blank">Learn environment</a>
+        <a href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c"
+            target="_blank">Teams environment</a>
+        <a href="https://hz.osiris-student.nl/#/home" target="_blank">Study progress</a>
+        <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github environment</a>
+    </div>
+    <span onclick="openNav()" id="sidemenuknop">&#9776;</span>
+
+    <main id="main">
+        <section id="sectionindex1">
             <h1 class="introtekst">FAQ</h1>
             <details>
-                <summary>FAQ 1</summary>
+                <summary>Hoe kun je een document vanaf jouw laptop afdrukken bij HZ?</summary>
+                <section class="faqdetail">
+                    <p>
+                        Bij de DocShop. De DocShop is een uitgebreide reproductieafdeling. Je kunt hier voor een studentenprijs
+                        documenten professioneel laten printen, kopiëren in kleur of inbinden. Heel handig wanneer je
+                        bijvoorbeeld je scriptie of een groot verslag wilt afdrukken.
+                    </p>
+                </section>
+            </details>
+            <details>
+                <summary>Hoe kun je een document scannen en naar jouw laptop bij HZ sturen?</summary>
+                <section class="faqdetail">
+                    <p>
+                        Om te kunnen scannen moet je minstens €0,07 op je pasje hebben staan. Registreer jouw HZ pass via de
+                        RFID-reader bij de printer. Daarna, klik op de optie 'Scan'. Volg vervolgens de stappen zoals daar aangegeven.
+                    </p>
+                </section>
+            </details>
+            <details>
+                <summary>Hoe kan ik iets kopen (zoals wanneer ik me aanmeld voor het IT-introductie-Evenement) in de HZ-webwinkel?</summary>
+                <section class="faqdetail">
+                    <p>
+                        Bezoek de HZ-website en log in met je HZ-account.
+                        Selecteer het gewenste product en geef het gewenste aantal op.
+                        Voeg het geselecteerde product toe aan je winkelwagen en ga vervolgens naar je winkelwagen.
+                        Klik op de knop "Afrekenen" en zorg ervoor dat je alle benodigde persoonlijke gegevens correct
+                        invult.
+                        Kies je gewenste betaalmethode en voltooi de betaling.
+                    </p>
+                </section>
+            </details>
+            <details>
+                <summary>Hoe kun je een projectruimte boeken in een van de vleugels?</summary>
+                <section class="faqdetail">
+                    <p>
+                        Via het Selfservive Portal in je HZ Portal. In de Selfservice Portal klik je op 'Maak een
+                        reservering' en maak je daarin een gewenste reservering aan.                    
+                    </p>
+                </section>
+            </details>
+            <details>
+                <summary>Wat zijn de instructies als je jouw auto op de parkeerplaats van HZ wilt parkeren?</summary>
+                <section class="faqdetail">
+                    <p>
+                        Je kan de parkeerplaats oprijden met de auto door simpelweg je HZ Studenten Pas te scannen bij de
+                        ingang.                 
+                    </p>
+                </section>
             </details>
         </section>
     </main>
+    <script src="/resources/js/sidemenu.js"></script>
+    <script src="/resources/js/faq.js"></script>
 </body>
+
+</html>

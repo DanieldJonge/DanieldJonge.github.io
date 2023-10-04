@@ -5,30 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Dit is mijn profiel, neem een snel kijkje wie ik ben!">
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/profile.css">
     <title>My Profile</title>
 
 </head>
 <header>
     <nav>
         <a class="nav-items" href="/index.html">Home</a>
-        <a class="nav-items" style="background-color: #55c2da;" href="/profile.html">Profile</a>
+        <a class="nav-items active" href="/profile.html">Profile</a>
         <a class="nav-items" href="/blog.html">Blog</a>
         <a class="nav-items" href="/faq.html">FAQ</a>
         <a class="nav-items" href="/dashboard.html">Dashboard</a>
     </nav>
 </header>
-<aside>
-    <ul id="sidemenu">
-        <li class="side-items"><a href="/">Link1</a></li>
-        <li class="side-items"><a href="/">Link2</a></li>
-        <li class="side-items"><a href="/">Link3</a></li>
-    </ul>
-</aside>
 
 <body>
-    <main>
-        <section>
+    <aside id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a
+            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf" target="_blank">Course
+            and Examination Regulations</a>
+        <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank">Implementation Regulations</a>
+        <a href="https://learn.hz.nl/course/view.php?id=23602#section-0" target="_blank">Learn environment</a>
+        <a href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank">Teams environment</a>
+        <a href="https://hz.osiris-student.nl/#/home" target="_blank">Study progress</a>
+        <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github environment</a>
+    </aside>
+    <span onclick="openNav()" id="sidemenuknop">&#9776;</span>
+
+    <main id="main">
+        <section class="profilemain" id="sectionindex1">
             <ul>
                 <h1>My Profile</h1>
                 <h2>Persoonlijke gegevens:</h2>
@@ -50,13 +58,18 @@
                 </li>
                 <li>
                     <h1>Buitenschoolse activiteiten:</h1>
-                    <p>Waterskiën, beetje gamen</p>
+                    <p>Professioneel Waterskiën, beetje gamen/coderen</p>
                 </li>
             </ul>
-            <img src="https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/369152770_3551892738473293_8903922287179971755_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=49d041&_nc_ohc=wWREFc_WlfgAX8jHqGo&_nc_ht=scontent-ams2-1.xx&oh=00_AfCgRGBOkNWekx7PNmEGmt3NxmfHn-5Kh78sbejzsHI7Rg&oe=64FC05C8"
+            <img src="resources/img/wskifoto.jpg"
                 alt="Profile Image">
-        </section>
+                <!-- <video width="720" height="1280" controls>
+                    <source src="resources/vid/IMG_0962.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>         -->
+            </section>
     </main>
+    <script src="/resources/js/sidemenu.js"></script>
 
 </body>
 

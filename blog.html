@@ -4,33 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog, hierop kan je zien wie wat voor nuttige dingen te zien zijn op het blog!">
     <title>Blog</title>
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/blog.css">
 </head>
 <header>
     <nav>
         <a class="nav-items" href="/index.html">Home</a>
         <a class="nav-items" href="/profile.html">Profile</a>
-        <a class="nav-items" style="background-color: #55c2da;" href="/blog.html">Blog</a>
+        <a class="nav-items active" href="/blog.html">Blog</a>
         <a class="nav-items" href="/faq.html">FAQ</a>
         <a class="nav-items" href="/dashboard.html">Dashboard</a>
     </nav>
 </header>
-<aside>
-    <ul id="sidemenu">
-        <li class="side-items"><a href="/">Link1</a></li>
-        <li class="side-items"><a href="/">Link2</a></li>
-        <li class="side-items"><a href="/">Link3</a></li>
-    </ul>
-</aside>
 
-<body id="indexbody">
-    <main>
-        <section>
+<body>
+    <aside id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a
+            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf" target="_blank">Course
+            and Examination Regulations</a>
+        <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank">Implementation Regulations</a>
+        <a href="https://learn.hz.nl/course/view.php?id=23602#section-0" target="_blank">Learn environment</a>
+        <a href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank">Teams environment</a>
+        <a href="https://hz.osiris-student.nl/#/home" target="_blank">Study progress</a>
+        <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github environment</a>
+    </aside>
+    <span onclick="openNav()" id="sidemenuknop">&#9776;</span>
+
+    <main id="main">
+        <section id="sectionindex1">
             <h1 class="introtekst">Blog</h1>
             <details>
                 <summary>Article in section of vice versa</summary>
-                <section id="tyestwe">
+                <section class="summarydetail">
                     <p style="color: #333">Het plaatsen van "article"-elementen binnen "section"-elementen of omgekeerd
                         hangt af van de
                         semantische betekenis en de hiërarchie van de inhoud op je webpagina. Beide aanpakken kunnen
@@ -104,7 +112,7 @@
             </details>
             <details>
                 <summary>Wie ben ik?</summary>
-                <section>
+                <section class="summarydetail">
                     <h1>Persoonlijke gegevens</h1>
                     <ul>
                         <li>Mijn naam is Daniël de Jonge.</li>
@@ -154,10 +162,92 @@
                 </section>
             </details>
             <details>
-                <summary>Dit is begin article 3</summary>
+                <summary>Studie keuze</summary>
+                <section class="summarydetail">
+                    <h2>Mijn Oorspronkelijke Interesse en Groei als Coder:</h2>
+                    <p>
+                        Van kinds af aan ben ik altijd gefascineerd geweest door computers en technologie. Ik begon met
+                        het
+                        bestuderen en zelfs kopiëren van bestaande code om te begrijpen hoe programma's werkten. Maar nu
+                        wil
+                        ik meer. Ik wil niet alleen de code van anderen begrijpen, maar ook mijn eigen software vanaf
+                        het
+                        begin kunnen maken.
+                    </p>
+                    <h2>Na het Voltooien van mijn Opleiding:</h2>
+                    <p>
+                        Na mijn opleiding hoop ik mijn carrière in de wereld van technologie te starten of verder te
+                        ontwikkelen. Een van mijn dromen is om mijn eigen softwarebedrijf te beginnen of een ander
+                        technologieproject te starten waar ik gepassioneerd over ben. Ik wil de vrijheid hebben om
+                        nieuwe
+                        ideeën te verkennen en te realiseren.
+
+                        Aan de andere kant sta ik ook open voor werken bij bestaande bedrijven, vooral als ze een
+                        cultuur
+                        van innovatie en creativiteit hebben. Het belangrijkste voor mij is dat ik mijn
+                        programmeervaardigheden kan blijven verbeteren en waardevolle bijdragen kan leveren aan
+                        projecten
+                        die impact hebben op de wereld.
+
+                        Mijn grootste hoop is om na mijn opleiding meer zelfvertrouwen te hebben in mijn programmeren.
+                        Ik
+                        wil een duidelijker idee hebben van waar mijn passie echt ligt en waar ik me verder in wil
+                        verdiepen. Wat er ook gebeurt, ik ben vastbesloten om te blijven leren en te groeien in de
+                        altijd
+                        veranderende wereld van technologie. De toekomst ziet er spannend uit, en ik ben er klaar voor
+                        om de
+                        uitdagingen en kansen met beide handen aan te grijpen.
+                    </p>
+                </section>
+            </details>
+            <details>
+                <summary>Programmeer ervaring</summary>
+                <section class="summarydetail">
+                    <h1>Mijn programmeer ervaring</h1>
+                    <h2>1. Python Script voor Weerwaarschuwingen:</h2>
+                    <p>
+                        Een van mijn meest opvallende projecten was het ontwikkelen van een Python-script dat realtime
+                        weergegevens analyseert en waarschuwingen
+                        genereert op basis van vooringestelde windsnelheid en -richtingwaarden. Dit script integreert
+                        met verschillende weerdiensten en stuurt
+                        pushmeldingen naar mijn mobiele telefoon wanneer de weersomstandigheden overeenkomen met de
+                        vooraf gedefinieerde criteria. Dit project was
+                        voor het waterskiën, waar je een speciale richting en snelheid nodig hebt om te kunnen gaan
+                        skien.
+                    </p>
+                    <h2>2. ZVWC Waterkiclub website:</h2>
+                    <p>
+                        ik heb een moderne en functionele website gecreëerd voor de ZVWC (Zeeuws-Vlaamse Waterskiclub)
+                        op <a href="https://zvwc.nl" target="_blank">zvwc.nl</a>. Deze website, gebouwd met Flask als
+                        backend-framework, biedt leden en bezoekers toegang tot clubinformatie, evenementinformatie,
+                        fotogalerijen, nieuwsposts en meer. In deze site zit veel werk en tijd, omdat deze makkelijk te
+                        gebruiken moest zijn voor mensen zonder programmeerervaring, en moest er dus een heel admin
+                        paneel voor komen. Dit is mijn grootste project tot nu toe geweest, en was het zeker waard.
+                    </p>
+                    <h2>3. Klusservice Vianen Website:</h2>
+                    <p>
+                        Ik heb een website ontwikkeld voor mijn vriend's klusservicebedrijf, klusservicevianen.nl. Hij
+                        wilde dezelfde esthetische uitstraling als de ZVWC-website, wat aantoont dat ik flexibel ben in
+                        het toepassen van ontwerpen op verschillende projecten. Het resultaat was een professionele en
+                        aantrekkelijke website waarmee zijn bedrijf online kon groeien, en een blije vriend.
+                    </p>
+                    <h2>4. Ervaring met SwiftUI:</h2>
+                    <p>
+                        Naast mijn ervaringen in Python en webontwikkeling, heb ik mijn vaardigheden uitgebreid naar
+                        mobiele app-ontwikkeling met SwiftUI. Deze moderne en intuïtieve framework stelde me in staat om
+                        iOS-apps te bouwen met een strakke gebruikersinterface en soepele gebruikerservaringen. Hoewel
+                        ik nog in mijn leerproces zit, heb ik veelbelovende projecten voltooid en ben ik enthousiast om
+                        mijn vaardigheden verder te ontwikkelen. Ik zal binnenkort overstappen op flutter, zodat het
+                        makkelijker wordt om dit te gebruiken voor zowel IOS als Android.
+
+                    </p>
+                </section>
             </details>
         </section>
     </main>
+    <script src="/resources/js/sidemenu.js"></script>
+    <script src="/resources/js/blog.js"></script>
+
 </body>
 
 </html>
