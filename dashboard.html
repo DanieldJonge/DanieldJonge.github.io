@@ -7,6 +7,7 @@
     <meta name="description" content="Dit is de studiemonitor, hierop kan je zien wat mijn vooruitgang is!">
     <title>Dashboard</title>
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/dashboard.css">
     <style>
         .progress-fill {
             transition: width 1s ease-in-out;
@@ -35,11 +36,13 @@
         <a href="https://hz.osiris-student.nl/#/home" target="_blank">Study progress</a>
         <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github environment</a>
     </aside>
-    <span onclick="openNav()" id="sidemenuknop">&#9776;</span>
+    <span onclick="openNav()" id="sidemenuknop">
+        <span class="rotate">&#9776;</span>
+    </span>
 
     <main id="main">
         <section id="sectionindex1">
-            <h1 class="introtekst">Study monitor</h1>
+            <h1 class="introtekst" id="studymonitorh1">Study monitor</h1>
             <div class="table-container">
                 <table>
                     <thead>
@@ -168,25 +171,8 @@
             </div>
         </section>
     </main>
-    <script>
-        function updateProgressBar(completeness) {
-            const progressBar = document.querySelector('.progress-fill');
-            progressBar.style.width = completeness + '%';
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const totalRequiredCredits = 60;
-            let obtainedCredits = 20;
-
-            let completenessPercentage = (obtainedCredits / totalRequiredCredits) * 100;
-            completenessPercentage = Math.min(completenessPercentage, 100);
-
-            setTimeout(() => {
-                updateProgressBar(completenessPercentage);
-            }, 100);
-        });
-    </script>
 </body>
+<script src="/resources/js/dashboard.js"></script>
 <script src="/resources/js/sidemenu.js"></script>
 
 

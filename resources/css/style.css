@@ -53,7 +53,9 @@ main {
 
 
 }
-
+.active {
+    background-color: #55c2da;
+}
 section {
     position: relative;
     margin-top: 3rem;
@@ -66,28 +68,6 @@ section {
 
 
 }
-
-/* aside {
-    position: fixed;
-    margin-top: 10rem;
-    padding-right: 15px;
-    border-radius: 20px;
-    width: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #c7c7c7af;
-    z-index: 1;
-} */
-
-/* #sidemenu {
-    list-style-type: none;
-    margin-left: -2rem;
-}
-
-.side-items {
-    position: relative;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-} */
 
 h1 {
     font-size: 28px;
@@ -112,74 +92,6 @@ img {
     height: 300px
 }
 
-
-
-/* details > p {
-    background-color: #eeeeee;
-    padding: 4px;
-    margin: 0;
-    box-shadow: 1px 1px 2px #bbbbbb;
-  } */
-
-.study-monitor {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.table-container {
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ccc;
-}
-
-th, td {
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-.sufficient {
-    background-color: #a7e1a1; 
-}
-
-.insufficient {
-    background-color: #ffa0a0; 
-}
-
-.completeness {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.progress-bar {
-    background-color: #e0e0e0;
-    height: 20px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.progress-fill {
-    background-color: #4caf50; 
-    height: 100%;
-    border-radius: 10px;
-    transition: width 1s ease-in-out;
-}
-.active {
-    background-color: #55c2da;
-}
 .sidenav {
     height: 100%;
     width: 0;
@@ -230,6 +142,10 @@ main {
     }
 }
 #sidemenuknop {
+    display: inline-block;
     font-size: 50px;
     cursor: pointer;
+    transition: 0.5s;
+    /* transform: rotate(45deg); */
+
 }
