@@ -5,3 +5,11 @@
     justify-content: center;
     transition: 0.5s;
 }
+#waterskifoto:hover {
+    transform: scale(1.35);
+    transition: transform 0.3s ease-out;
+}
+
+.profilefotos {
+    transition: transform 0.3s ease-in-out;
+}
