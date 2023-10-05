@@ -27,6 +27,9 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+tr {
+    background-color: #b3b3b3;
+}
 
 .sufficient {
     background-color: #a7e1a1; 

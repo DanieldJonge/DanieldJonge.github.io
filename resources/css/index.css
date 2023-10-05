@@ -25,6 +25,29 @@
     text-align: center;
     color: #333333;
 }
+
 h3 {
     color: #333333;
+}
+
+#lijstfoto {
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+ul {
+    flex: 1;
+    padding: 0;
+    margin-right: 20px;
+}
+
+#dronefoto:hover {
+    transform: scale(2);
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-in-out;
+}
+#dronefoto {
+    transition: transform 0.3s ease-in-out;
 }
