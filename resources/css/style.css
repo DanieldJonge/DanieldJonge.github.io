@@ -8,14 +8,15 @@ nav {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 525px;
-    background-color: #c7c7c7af;
+    /* background-color: #c7c7c7af; */
+    background-color: #A9B7C6;
     z-index: 1;
 }
 
 .nav-items {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    background-color: #4681f4;
+    background-color: #0077CC;
     color: white;
     position: relative;
     /* color: #6dd1f3; */
@@ -30,13 +31,13 @@ nav {
 
 .nav-items:hover {
     transition: background-color 0.2s ease;
-    background-color: #486db6;
+    background-color: #0099FF;
 }
 
 body {
 
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #E0EBF5;
     padding: 0;
     /* display: flex; */
     justify-content: center;
@@ -54,12 +55,12 @@ main {
 
 }
 .active {
-    background-color: #55c2da;
+    background-color: #F0A500;
 }
 section {
     position: relative;
     margin-top: 3rem;
-    background-color: #fff;
+    background-color: #F5F5F5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -90,6 +91,9 @@ img {
     border-radius: 10px;
     width: auto;
     height: 300px
+}
+a {
+    color: #0077CC;
 }
 
 .sidenav {
@@ -146,6 +150,5 @@ main {
     font-size: 50px;
     cursor: pointer;
     transition: 0.5s;
-    /* transform: rotate(45deg); */
-
 }
+

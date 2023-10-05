@@ -1,7 +1,9 @@
 details>summary {
     padding: 13px;
     max-width: 350px;
-    background: linear-gradient(315deg, #2EAAfa, #1F2f98);
+    /* background: linear-gradient(315deg, #2EAAfa, #1F2f98); */
+    background: linear-gradient(90deg, #E0EBF5, #0077CC);
+    color: #333333;
     border: none;
     box-shadow: 1px 1px 2px #bbbbbb;
     border-radius: 5px;
@@ -28,7 +30,7 @@ details>summary:hover {
     /* background: linear-gradient(315deg, #7ccbff, #485291); */
 }
 .faqdetail p {
-color: black;
+    color: #333333;
 }
 details {
     transition: max-height 0.3s ease-in-out; /* Adjust the transition duration and timing function as needed */
