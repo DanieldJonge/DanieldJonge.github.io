@@ -1,6 +1,5 @@
 .profilemain {
     display: flex;
-    /* flex-direction: column; Stack header, main, and aside vertically */
     align-items: center;
     justify-content: center;
     transition: 0.5s;

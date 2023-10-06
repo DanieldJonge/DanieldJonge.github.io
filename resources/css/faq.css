@@ -1,7 +1,6 @@
 details>summary {
     padding: 13px;
     max-width: 350px;
-    /* background: linear-gradient(315deg, #2EAAfa, #1F2f98); */
     background: linear-gradient(90deg, #E0EBF5, #0077CC);
     color: #333333;
     border: none;
@@ -25,15 +24,13 @@ details>summary:hover {
     width: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    /* background: linear-gradient(315deg, #1AA7EC, #1E2F97); */
     background-color: #DBF3FA;
-    /* background: linear-gradient(315deg, #7ccbff, #485291); */
 }
 .faqdetail p {
     color: #333333;
 }
 details {
-    transition: max-height 0.3s ease-in-out; /* Adjust the transition duration and timing function as needed */
+    transition: max-height 0.3s ease-in-out; 
 }
 
 details[open] {

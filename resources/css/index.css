@@ -1,6 +1,7 @@
 #sectionindex1 {
     position: relative;
     transition: 0.5s;
+    transition: transform 0.3s ease-in-out;
 
 }
 
@@ -10,7 +11,11 @@
     height: auto;
     top: 5px;
     right: 5px;
-    /* opacity: 25%; */
+    transition: transform 0.3s ease-in-out;
+}
+#fotoikbegin:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-out;
 }
 
 #fotohz {
@@ -18,7 +23,6 @@
     width: 300px;
     height: auto;
     top: 5px;
-    /* opacity: 25%; */
 }
 
 .introtekst {
@@ -46,7 +50,6 @@ ul {
 #dronefoto:hover {
     transform: scale(2);
     transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-in-out;
 }
 #dronefoto {
     transition: transform 0.3s ease-in-out;
